@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Chat</title>
+	<title>Flatuosités</title>
 
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -13,7 +13,7 @@
 <body>
 	<div class="chat">
 		<div id="chat-box" class="chat-box">
-			<div id="offline"><span class="big">Server is offline.</span><br />Sorry for that.</div>
+			<div id="offline"><span class="big">Le site t'attend, rentre ton pseudo !</span><br />Ou alors le site se lance lentement, déso pour ça.</div>
 			<ul id="msgs" class="msgs"></ul>
 			<ul id="typing" class="msgs"></ul>
 		</div>
@@ -22,13 +22,20 @@
 			<button id="emic_btn">
 				<img src="static/emic/white-smiling-face.png" width="20px" height="20px" title="White Smiling Face">
 			</button>
-			<textarea id="form_input" class="form-control" data-user-id="2" placeholder="Type something ..." rows="1"></textarea>
-			<button id="send">Send</button>
+      <textarea id="form_input" class="form-control" data-user-id="2" placeholder="Tu peux écrire aux autres ici en appuyant sur le bouton « Envoi texte »" rows="1"></textarea>
+			<button id="send">Envoi texte</button>
+      <button class="controls" id="btn-start-recording">🎙️🔴💨</button>
+      <button class="controls" id="btn-stop-recording" disabled>Envoi audio</button>
+      <button class="controls" id="btn-release-microphone" disabled>🔌❌🎙️</button>
+      <!-- I guess I need to append this div audio playerAudio in id msgs ? -->
+      <!-- <div><audio class="playerAudio" controls playsinline></audio></div> -->
+      <p id="duration"></p>
 			<ul id="users"></ul>
 		</div>
 	</div>
 
-	<script type="text/javascript" src="socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="static/scripts/RecordRTC.js"></script>
+  <script type="text/javascript" src="socket.io/socket.io.js"></script>
 	<script type="text/javascript" src="static/scripts/emic.js"></script>
 	<script type="text/javascript" src="static/scripts/chat.js"></script>
 	<script type="text/javascript">

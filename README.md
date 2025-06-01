@@ -1,4 +1,24 @@
 # chat
+
+## Contexte
+
+Fork de ce repo [dont l'issue ne se résoudra pas toute seule](https://github.com/m1k1o/chat/issues/32)
+
+## recorder.getBlob()
+ - là dedans on dirait y'a le son, essayer de faire une recherche d'un player javascript construit par appendHTML etc ? Genre comme replace audio mais qui en refait un à chaque message ?
+
+## À suivre
+ - d'abord récupérer le lien du blob ? Envoyer tout balises etc depuis replaceAudio mauvaise méthode ?
+ - bug d'autoplay dans firefox ?
+ - The Notification permission may only be requested from inside a short running user-generated event handler. ?
+ - osef des gens connecté·xs et de leurs pseudos ?
+ - faire un feedback interactif du preview son pour pas l'envoyer en s'étant trompé ?
+ - transformer le bouton en « VRAIMENT ENVOYER » ?
+ - réussir à mettre le son dans un message
+ - pistes : comprendre comment envoyer des trucs dans le var Chat ?
+
+## Historique du repo de base
+
 Simple plug & play real-time JavaScript chat implemented using Socket.io.
 
 Where simplicity meets usability:
@@ -52,4 +72,5 @@ Requirements: `nodejs`, `npm`
 	- `npm install`
 3. Run server (default port is `80`).
 	- `npm start [custom_port]`
+    - si merde avec nodejs : `ln -s /usr/bin/node /usr/local/bin/nodejs`
 4. Done, visit your chat in browser.

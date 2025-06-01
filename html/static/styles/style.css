@@ -301,6 +301,16 @@ a {
 	box-shadow: none;
 }
 
+.controls{
+	background: none;
+	color: pink;
+	text-transform: uppercase;
+	padding: 5px;
+	margin: 0 10px 0 0;
+	border: 1px solid pink;
+	border-radius: 0;
+}
+
 #send{
 	background: none;
 	color: white;
